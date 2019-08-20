@@ -20,6 +20,7 @@ h1{
     text-transform: uppercase;
     font-size: 3rem;
     color: ($footergrey);
+    letter-spacing: 0.2rem;
 }
 
 h2{
@@ -36,5 +37,4 @@ p.wtf{
 footer p{
     font-family: ($baseFont);
     color: ($footergrey);
-    // margin-bottom: 0;
 }
