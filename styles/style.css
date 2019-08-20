@@ -184,7 +184,7 @@ html {
 }
 
 p {
-  font-family: "Noto Sans", "Helvetica," sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 h1 {
@@ -193,30 +193,37 @@ h1 {
   text-transform: uppercase;
   font-size: 3rem;
   color: #9c9a9a;
-  background: #2d132c;
 }
 
 h2 {
-  font-family: "Noto Sans", "Helvetica," sans-serif;
+  font-family: "Noto Sans", sans-serif;
+}
+
+p.wtf {
+  font-weight: 100;
 }
 
 footer p {
-  font-family: "Noto Sans", "Helvetica," sans-serif;
-  display: block;
-  background-color: #2d132c;
+  font-family: "Noto Sans", sans-serif;
   color: #9c9a9a;
-}
-
-* {
-  border: 2px solid green;
 }
 
 wrapper {
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
   text-align: center;
+  background: #2d132c;
+  padding: 5%;
+  margin-top: 0;
+}
+
+header {
+  padding: 0;
+  margin: 0;
 }
 
 .d20,
@@ -226,6 +233,52 @@ footer {
   max-width: 100%;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
+p.wtf {
+  text-align: center;
+}
+
+.d20 {
+  width: 100px;
+  height: 55px;
+  background: red;
+  position: relative;
+}
+
+.d20:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid red;
+}
+
+.d20:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid red;
+}
+
 footer {
   text-align: center;
+  margin-bottom: 0;
+}
+
+footer p {
+  display: block;
+  background-color: #2d132c;
 }

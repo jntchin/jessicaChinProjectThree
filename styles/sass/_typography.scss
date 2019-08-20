@@ -20,11 +20,14 @@ h1{
     text-transform: uppercase;
     font-size: 3rem;
     color: ($footergrey);
-    background: ($darkpurple);
 }
 
 h2{
     font-family: ($baseFont);
+}
+
+p.wtf{
+    font-weight: 100;
 }
 
 
@@ -32,7 +35,6 @@ h2{
 
 footer p{
     font-family: ($baseFont);
-    display: block;
-    background-color: ($darkpurple);
     color: ($footergrey);
+    // margin-bottom: 0;
 }
