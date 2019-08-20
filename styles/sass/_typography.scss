@@ -1,12 +1,6 @@
-
-// ROBERTO SLAB (thin 100, bold 700, regular), NOTO SANS (regular)
-// font-family: 'Roboto Slab', serif;
-// font-family: 'Noto Sans', sans-serif;
-
-$h1Font:'Roboto Slab', serif;
-$baseFont:'Noto Sans', 'Helvetica,' sans-serif;
-
+@import 'variables';
     
+// HEADING STYLES
 h1{
     font-family: ($h1Font);
     font-weight: 700;
@@ -16,4 +10,10 @@ h2{
     font-family: ($baseFont);
 }
 
+//GENERAL STYLES
+footer p{
+    font-family: ($baseFont);
+    display: block;
+    // background-color
+}
 
