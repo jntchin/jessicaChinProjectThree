@@ -1,19 +1,38 @@
 @import 'variables';
     
-// HEADING STYLES
+
+
+//GENERAL FONT STYLES
+
+html{
+    font-size: 125%;
+}
+
+p{
+    font-family: ($baseFont);
+}
+
+
+// HEADING FONT STYLES
 h1{
     font-family: ($h1Font);
     font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: ($footergrey);
+    background: ($darkpurple);
 }
 
 h2{
     font-family: ($baseFont);
 }
 
-//GENERAL STYLES
+
+//FOOTER FONT STYLES
+
 footer p{
     font-family: ($baseFont);
     display: block;
-    // background-color
+    background-color: ($darkpurple);
+    color: ($footergrey);
 }
-

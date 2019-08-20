@@ -1,8 +1,37 @@
 @import 'setup';
 @import 'typography';
-@import 'headers';
 
 // styles for a 20-sided polygon
 // styles for the modifier drop-down
 
 // stretch goals: additional polygons
+
+
+//GENERAL STYLES
+*{
+    border: 2px solid green;
+}
+
+wrapper{
+    width: 100%;
+}
+
+//HEADER STYLES
+h1{
+    text-align: center;
+}
+
+
+//BODY STYLES
+.d20,
+.modifier,
+.finalScore
+footer{
+    max-width: 100%;
+}
+
+//FOOTER STYLES
+
+footer{
+    text-align: center;
+}

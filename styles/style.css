@@ -164,3 +164,68 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+html {
+  font-size: 125%;
+}
+
+p {
+  font-family: "Noto Sans", "Helvetica," sans-serif;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #9c9a9a;
+  background: #2d132c;
+}
+
+h2 {
+  font-family: "Noto Sans", "Helvetica," sans-serif;
+}
+
+footer p {
+  font-family: "Noto Sans", "Helvetica," sans-serif;
+  display: block;
+  background-color: #2d132c;
+  color: #9c9a9a;
+}
+
+* {
+  border: 2px solid green;
+}
+
+wrapper {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.d20,
+.modifier,
+.finalScore
+footer {
+  max-width: 100%;
+}
+
+footer {
+  text-align: center;
+}
