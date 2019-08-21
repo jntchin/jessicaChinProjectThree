@@ -209,6 +209,10 @@ footer p {
   color: #9c9a9a;
 }
 
+* {
+  border: 2px solid green;
+}
+
 html {
   padding: 0;
 }
@@ -260,6 +264,33 @@ p.wtf {
   height: 5.5rem;
   background: red;
   position: relative;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.d20 {
+  -webkit-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
 }
 
 .d20:before {

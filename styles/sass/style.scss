@@ -8,9 +8,9 @@
 
 
 //GENERAL STYLES
-// *{
-//     border: 2px solid green;
-// }
+*{
+    border: 2px solid green;
+}
 
 html{
     padding: 0;
@@ -32,7 +32,6 @@ h1{
 
 header{
     margin-top: 0;
-    // padding-top: 0;
 }
 
 // header{
@@ -59,12 +58,16 @@ p.wtf{
     text-align: center;
 }
 
+
+
+
 //DIE STYLES
 
 .d20Wrapper{
     display: flex;
     align-content: center;
     width: 100%;
+    
 }
 
 .d20 {
@@ -73,6 +76,45 @@ p.wtf{
     background: red;
     position: relative;
 }
+
+
+@-webkit-keyframes rotating {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  
+  .d20 {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+  }
 
 .d20:before {
     content: "";
