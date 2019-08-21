@@ -15,9 +15,13 @@
 
 $(document).ready(function(){
 
-    $(body).on('click', function(){
+    $('body').on('click', function(){
         console.log(`Click again to stop`);
-    });
+    }); 
+
+    // $('body').on('click', function(){
+    //     console.log(`You already did this`);
+    // })
 
 });
 
