@@ -72,8 +72,9 @@ p.wtf{
     height: 5.5rem;
     background: red;
     position: relative;
-  }
-  .d20:before {
+}
+
+.d20:before {
     content: "";
     position: absolute;
     top: -2.5rem;
@@ -83,8 +84,9 @@ p.wtf{
     border-left: 5rem solid transparent;
     border-right: 5rem solid transparent;
     border-bottom: 2.5rem solid red;
-  }
-  .d20:after {
+}
+
+.d20:after {
     content: "";
     position: absolute;
     bottom: -2.5rem;
@@ -94,7 +96,7 @@ p.wtf{
     border-left: 5rem solid transparent;
     border-right: 5rem solid transparent;
     border-top: 2.5rem solid red;
-  }
+}
 
 
 //FOOTER STYLES
