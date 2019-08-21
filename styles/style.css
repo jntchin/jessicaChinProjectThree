@@ -209,6 +209,10 @@ footer p {
   color: #9c9a9a;
 }
 
+html {
+  padding: 0;
+}
+
 wrapper {
   width: 100%;
   padding: 0;
@@ -223,8 +227,7 @@ h1 {
 }
 
 header {
-  padding: 0;
-  margin: 0;
+  margin-top: 0;
 }
 
 .d20,
@@ -243,9 +246,18 @@ p.wtf {
   text-align: center;
 }
 
+.d20Wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+}
+
 .d20 {
-  width: 100px;
-  height: 55px;
+  width: 10rem;
+  height: 5.5rem;
   background: red;
   position: relative;
 }
@@ -253,25 +265,25 @@ p.wtf {
 .d20:before {
   content: "";
   position: absolute;
-  top: -25px;
+  top: -2.5rem;
   left: 0;
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 25px solid red;
+  border-left: 5rem solid transparent;
+  border-right: 5rem solid transparent;
+  border-bottom: 2.5rem solid red;
 }
 
 .d20:after {
   content: "";
   position: absolute;
-  bottom: -25px;
+  bottom: -2.5rem;
   left: 0;
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 25px solid red;
+  border-left: 5rem solid transparent;
+  border-right: 5rem solid transparent;
+  border-top: 2.5rem solid red;
 }
 
 footer {
