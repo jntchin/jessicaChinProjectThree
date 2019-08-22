@@ -1,7 +1,8 @@
+
 $(document).ready(function(){
 //on a click event, animate a 20-sided polygon (rotate) 
 //add message (html) saying "click to stop"
-    $('body').on('click', function(){
+    $('.d20').on('click', function(){
         console.log(`Click again to stop`);
        
 
@@ -12,6 +13,10 @@ $(document).ready(function(){
 //show that number as the total
 
     $('p.clickPrompt').append(` Click again to stop!`).removeClass('.rotating');
+
+    let dieRoll = Math.floor(Math.random()*(1 - 20)+20)
+        console.log(dieRoll);
+
 }); 
 
 
