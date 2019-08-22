@@ -3,10 +3,11 @@ $(document).ready(function(){
 //add message (html) saying "click to stop"
     $('body').on('click', function(){
         console.log(`Click again to stop`);
+        $('p.clickPrompt').append(` Click again to stop!`).removeClass('.rotating');
     }); 
 
-//on another click event, stop the animation
-//add message saying "click for a new roll"
+//on another click or touch event, stop the animation
+//add message saying "click / touch for a new roll"
 //show a random number from 1 to 20 on the die itself
 //store that number
 //show that number as the total
