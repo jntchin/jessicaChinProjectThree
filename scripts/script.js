@@ -12,10 +12,15 @@ $(document).ready(function(){
 //store that number
 //show that number as the total
 
-    $('p.clickPrompt').append(` Click again to stop!`).removeClass('.rotating');
+    $('p.clickPrompt').empty().html(` Click again to stop!`);
+    
 
-    let dieRoll = Math.floor(Math.random()*(1 - 20)+20)
+    let dieRoll = Math.floor(Math.random()*(0-20))+21
         console.log(dieRoll);
+        $('.emptyValue').empty().html(dieRoll);
+        // $('p.finalRoll').append(dieRoll);
+        
+        
 
 }); 
 
