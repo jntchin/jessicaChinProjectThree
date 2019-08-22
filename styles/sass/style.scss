@@ -8,19 +8,10 @@
 
 
 //GENERAL STYLES
-*{
-    border: 2px solid green;
-}
+// *{
+//     border: 2px solid green;
+// }
 
-html{
-    padding: 0;
-}
-
-wrapper{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
 
 //HEADER STYLES
 h1{
@@ -145,12 +136,14 @@ p.wtf{
 
 footer{
     text-align: center;
-    margin: 0;
+    // margin-bottom: 0;
+    display: block;
 }
 
 footer p{
     display: block;
     background-color: ($darkpurple);
+    // margin-bottom: 0;
 }
 
 

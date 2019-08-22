@@ -204,23 +204,15 @@ p.wtf {
   font-weight: 100;
 }
 
-footer p {
+button {
   font-family: "Noto Sans", sans-serif;
+  background: #801336;
   color: #9c9a9a;
 }
 
-* {
-  border: 2px solid green;
-}
-
-html {
-  padding: 0;
-}
-
-wrapper {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+footer p {
+  font-family: "Noto Sans", sans-serif;
+  color: #9c9a9a;
 }
 
 h1 {
@@ -319,7 +311,7 @@ p.wtf {
 
 footer {
   text-align: center;
-  margin: 0;
+  display: block;
 }
 
 footer p {
