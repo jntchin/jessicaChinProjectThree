@@ -28,6 +28,12 @@ dieRollApp.rollDie = function(){
     })
 };
 
+dieRollApp.formSubmit = function(){
+    $('form').on('submit', function(event){
+        event.preventDefault();
+    });
+};
+
 dieRollApp.addModifier = function(){
     $('button').on('click touch', function(){ 
         dieRollApp.modifier = parseInt($('option:selected').attr('value'));
@@ -42,11 +48,7 @@ $(document).ready(function(){
 
     dieRollApp.initialState();
     dieRollApp.rollDie();
+    dieRollApp.formSubmit();
     dieRollApp.addModifier();
-   
-
-    $('form').on('submit', function(event){
-        event.preventDefault();
-    });
 
 });
