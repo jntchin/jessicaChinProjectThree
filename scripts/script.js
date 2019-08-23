@@ -1,6 +1,8 @@
 const dieRollApp = {};
 
 dieRollApp.dieMoving = false;
+
+
 dieRollApp.initialState = function(){ 
     $('p.clickPrompt').append(`Click here to roll the die`);
     $('.d20').css('animation-play-state', 'paused');
@@ -26,24 +28,25 @@ dieRollApp.rollDie = function(){
     })
 };
 
+dieRollApp.addModifier = function(){
+    $('button').on('click touch', function(){ 
+        dieRollApp.modifier = parseInt($('option:selected').attr('value'));
+        dieRollApp.finalDieRoll = dieRollApp.modifier + dieRollApp.dieRoll
+        $('.emptyValue').empty().html(dieRollApp.finalDieRoll);
+    });
+};
+
 
 
 $(document).ready(function(){
+
     dieRollApp.initialState();
     dieRollApp.rollDie();
+    dieRollApp.addModifier();
    
 
     $('form').on('submit', function(event){
         event.preventDefault();
     });
-
-    $('button').on('click touch', function(){ 
-        dieRollApp.modifier = parseInt($('option:selected').attr('value'));
-        console.log(`hello`, dieRollApp.modifier);
-        dieRollApp.finalDieRoll = dieRollApp.modifier + dieRollApp.dieRoll
-        console.log(dieRollApp.finalDieRoll);
-    });
-
-   
 
 });
