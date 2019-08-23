@@ -269,15 +269,6 @@ p.wtf {
   text-align: center;
 }
 
-.d20Wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  width: 100%;
-}
-
 .d20 {
   width: 10rem;
   height: 5.5rem;
@@ -317,4 +308,5 @@ footer {
 footer p {
   display: block;
   background-color: #2d132c;
+  margin-bottom: 0;
 }

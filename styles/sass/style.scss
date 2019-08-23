@@ -55,12 +55,12 @@ p.wtf{
 
 //DIE STYLES
 
-.d20Wrapper{
-    display: flex;
-    align-content: center;
-    width: 100%;
+// .d20Wrapper{
+//     display: flex;
+//     align-content: center;
+//     width: 100%;
     
-}
+// }
 
 .d20 {
     width: 10rem;
@@ -98,14 +98,13 @@ p.wtf{
 
 footer{
     text-align: center;
-    // margin-bottom: 0;
     display: block;
 }
 
 footer p{
     display: block;
     background-color: ($darkpurple);
-    // margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 
