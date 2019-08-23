@@ -184,7 +184,7 @@ html {
 }
 
 p {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -197,7 +197,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p.wtf {
@@ -205,13 +205,13 @@ p.wtf {
 }
 
 button {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: #801336;
   color: #9c9a9a;
 }
 
 footer p {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #9c9a9a;
 }
 
@@ -242,6 +242,15 @@ footer p {
   animation: rotating 2s linear infinite;
 }
 
+a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+a :hover {
+  background: #2d132c;
+}
+
 h1 {
   text-align: center;
   background: #2d132c;
@@ -263,6 +272,8 @@ footer {
 body {
   padding: 0;
   margin: 0;
+  background: #801336;
+  color: #e0e0e0;
 }
 
 p.wtf {

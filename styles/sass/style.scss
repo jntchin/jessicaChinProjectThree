@@ -13,6 +13,14 @@
 //     border: 2px solid green;
 // }
 
+a{
+  text-decoration: none;
+  color: ($white);
+    :hover{
+      background:($darkpurple);
+    }
+}
+
 
 //HEADER STYLES
 h1{
@@ -44,6 +52,8 @@ footer{
 body{
     padding: 0;
     margin: 0;
+    background: ($raspberry);
+    color: ($white);
 }
 
 p.wtf{
