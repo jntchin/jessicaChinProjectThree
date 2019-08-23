@@ -281,7 +281,7 @@ p.wtf {
 .d20 {
   width: 10rem;
   height: 5.5rem;
-  background: red;
+  background: #9c9a9a;
   position: relative;
 }
 
@@ -294,7 +294,7 @@ p.wtf {
   height: 0;
   border-left: 5rem solid transparent;
   border-right: 5rem solid transparent;
-  border-bottom: 2.5rem solid red;
+  border-bottom: 2.5rem solid #9c9a9a;
 }
 
 .d20:after {
@@ -306,7 +306,7 @@ p.wtf {
   height: 0;
   border-left: 5rem solid transparent;
   border-right: 5rem solid transparent;
-  border-top: 2.5rem solid red;
+  border-top: 2.5rem solid #9c9a9a;
 }
 
 footer {

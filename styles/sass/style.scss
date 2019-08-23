@@ -65,7 +65,7 @@ p.wtf{
 .d20 {
     width: 10rem;
     height: 5.5rem;
-    background: red;
+    background: ($footergrey);
     position: relative;
 }
 
@@ -78,7 +78,7 @@ p.wtf{
     height: 0;
     border-left: 5rem solid transparent;
     border-right: 5rem solid transparent;
-    border-bottom: 2.5rem solid red;
+    border-bottom: 2.5rem solid ($footergrey);
 }
 
 .d20:after {
@@ -90,7 +90,7 @@ p.wtf{
     height: 0;
     border-left: 5rem solid transparent;
     border-right: 5rem solid transparent;
-    border-top: 2.5rem solid red;
+    border-top: 2.5rem solid ($footergrey);
 }
 
 
