@@ -28,31 +28,20 @@ dieRollApp.rollDie = function(){
 
 
 
-// flag to indicate when the page first laads, the die is not moving.
-
-
 $(document).ready(function(){
     dieRollApp.initialState();
     dieRollApp.rollDie();
-    
-  
-
-    // $('.rotating').empty().css();
-
    
 
     $('form').on('submit', function(event){
         event.preventDefault();
     });
 
-    $('button').on('click', function(){
-        // $('p.clickPrompt').empty().html(`Click here to roll the die`);
-        // let dieRoll = Math.floor(Math.random()*(0-20))+21;
-        // let modifier = document.getElementById('number');
-        // console.log(modifier);
-        
-        dieRollApp.finalDieRoll = dieRollApp.dieRoll + 4; 
-        console.log(dieRollApp.dieRoll,dieRollApp.finalDieRoll);
+    $('button').on('click touch', function(){ 
+        dieRollApp.modifier = parseInt($('option:selected').attr('value'));
+        console.log(`hello`, dieRollApp.modifier);
+        dieRollApp.finalDieRoll = dieRollApp.modifier + dieRollApp.dieRoll
+        console.log(dieRollApp.finalDieRoll);
     });
 
    
