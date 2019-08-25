@@ -30,7 +30,7 @@ h1{
     padding: 5%;
     margin-top: 0;
     @include for-small-phones{
-        margin-top: 5%;
+        padding-top: 5%;
     }
 }
 
