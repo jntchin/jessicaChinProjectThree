@@ -10,7 +10,7 @@
 
 //GENERAL STYLES
 // *{
-//     border: 2px solid green;
+//     border: 2px solid orange;
 // }
 
 a{
@@ -42,6 +42,16 @@ header{
 
 
 //BODY STYLES
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    // border: 2px solid orange;
+}
+
 .d20,
 .modifier,
 .finalScore
@@ -65,18 +75,18 @@ p.wtf{
 
 //DIE STYLES
 
-// .d20Wrapper{
-//     display: flex;
-//     align-content: center;
-//     width: 100%;
-    
-// }
 
 .d20 {
     width: 10rem;
     height: 5.5rem;
     background: ($footergrey);
+    display: flex;
+    border: 2px solid green;
+}
+
+.d20Wrapper{
     position: relative;
+    // border: 2px solid orange;
 }
 
 .d20:before {
