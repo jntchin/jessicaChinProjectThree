@@ -276,6 +276,7 @@ main {
       justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding: 2%;
 }
 
 .d20,
@@ -296,6 +297,10 @@ p.wtf {
   text-align: center;
 }
 
+.mainText {
+  margin: 4% 0;
+}
+
 .d20 {
   width: 10rem;
   height: 5.5rem;
@@ -303,7 +308,7 @@ p.wtf {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid green;
+  margin: 5% 0;
 }
 
 .d20Wrapper {

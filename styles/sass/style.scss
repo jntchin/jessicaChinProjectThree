@@ -49,6 +49,7 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
+    padding: 2%;
     // border: 2px solid orange;
 }
 
@@ -70,7 +71,9 @@ p.wtf{
     text-align: center;
 }
 
-
+.mainText{
+    margin: 4% 0;
+}
 
 
 //DIE STYLES
@@ -81,7 +84,8 @@ p.wtf{
     height: 5.5rem;
     background: ($footergrey);
     display: flex;
-    border: 2px solid green;
+    // border: 2px solid green;
+    margin: 5% 0;
 }
 
 .d20Wrapper{
