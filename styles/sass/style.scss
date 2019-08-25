@@ -16,9 +16,9 @@
 
 a{
   text-decoration: none;
-  color: ($white);
+  color: black;
     :hover{
-      background:($darkpurple);
+      background:($turquoise);
     }
 }
 
@@ -26,9 +26,12 @@ a{
 //HEADER STYLES
 h1{
     text-align: center;
-    background: ($darkpurple);
+    background: ($purple);
     padding: 5%;
     margin-top: 0;
+    @include for-small-phones{
+        margin-top: 5%;
+    }
 }
 
 header{
@@ -64,8 +67,8 @@ footer{
 body{
     padding: 0;
     margin: 0;
-    background: ($raspberry);
-    color: ($white);
+    background: ($mustard);
+    color: black;
 }
 
 p.wtf{
@@ -74,6 +77,9 @@ p.wtf{
 
 .mainText{
     margin: 4% 0;
+    @include for-small-phones{
+        margin-top: 8%;
+    }
 }
 
 
@@ -83,10 +89,15 @@ p.wtf{
 .d20 {
     width: 10rem;
     height: 5.5rem;
-    background: ($footergrey);
+    background: ($lightgrey);
     display: flex;
     // border: 2px solid green;
     margin: 5% 0;
+    @include for-small-phones{
+        .d20{
+            text-align: center;
+        }
+    }
 }
 
 .d20Wrapper{
@@ -103,7 +114,7 @@ p.wtf{
     height: 0;
     border-left: 5rem solid transparent;
     border-right: 5rem solid transparent;
-    border-bottom: 2.5rem solid ($footergrey);
+    border-bottom: 2.5rem solid ($lightgrey);
 }
 
 .d20:after {
@@ -115,7 +126,7 @@ p.wtf{
     height: 0;
     border-left: 5rem solid transparent;
     border-right: 5rem solid transparent;
-    border-top: 2.5rem solid ($footergrey);
+    border-top: 2.5rem solid ($lightgrey);
 }
 
 
@@ -128,7 +139,7 @@ footer{
 
 footer p{
     display: block;
-    background-color: ($darkpurple);
+    background-color: ($turquoise);
     margin-bottom: 0;
 }
 

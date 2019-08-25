@@ -192,7 +192,7 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 3rem;
-  color: #9c9a9a;
+  color: #F7ECDF;
   letter-spacing: 0.2rem;
 }
 
@@ -212,13 +212,13 @@ p.wtf {
 
 button {
   font-family: "Montserrat", sans-serif;
-  background: #801336;
-  color: #9c9a9a;
+  background: #7E395C;
+  color: #F7ECDF;
 }
 
 footer p {
   font-family: "Montserrat", sans-serif;
-  color: #9c9a9a;
+  color: black;
 }
 
 @-webkit-keyframes rotating {
@@ -250,18 +250,24 @@ footer p {
 
 a {
   text-decoration: none;
-  color: #e0e0e0;
+  color: black;
 }
 
 a :hover {
-  background: #2d132c;
+  background: #76E2DC;
 }
 
 h1 {
   text-align: center;
-  background: #2d132c;
+  background: #7E395C;
   padding: 5%;
   margin-top: 0;
+}
+
+@media (max-width: 320px) {
+  h1 {
+    margin-top: 5%;
+  }
 }
 
 header {
@@ -295,8 +301,8 @@ footer {
 body {
   padding: 0;
   margin: 0;
-  background: #801336;
-  color: #e0e0e0;
+  background: #FFBD46;
+  color: black;
 }
 
 p.wtf {
@@ -307,14 +313,26 @@ p.wtf {
   margin: 4% 0;
 }
 
+@media (max-width: 320px) {
+  .mainText {
+    margin-top: 8%;
+  }
+}
+
 .d20 {
   width: 10rem;
   height: 5.5rem;
-  background: #9c9a9a;
+  background: #F7ECDF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 5% 0;
+}
+
+@media (max-width: 320px) {
+  .d20 .d20 {
+    text-align: center;
+  }
 }
 
 .d20Wrapper {
@@ -330,7 +348,7 @@ p.wtf {
   height: 0;
   border-left: 5rem solid transparent;
   border-right: 5rem solid transparent;
-  border-bottom: 2.5rem solid #9c9a9a;
+  border-bottom: 2.5rem solid #F7ECDF;
 }
 
 .d20:after {
@@ -342,7 +360,7 @@ p.wtf {
   height: 0;
   border-left: 5rem solid transparent;
   border-right: 5rem solid transparent;
-  border-top: 2.5rem solid #9c9a9a;
+  border-top: 2.5rem solid #F7ECDF;
 }
 
 footer {
@@ -352,6 +370,6 @@ footer {
 
 footer p {
   display: block;
-  background-color: #2d132c;
+  background-color: #76E2DC;
   margin-bottom: 0;
 }

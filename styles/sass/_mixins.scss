@@ -2,3 +2,7 @@
 @mixin for-landscape-phone{
     @media(max-width: 610px){@content;}
 }
+
+@mixin for-small-phones{
+    @media(max-width: 320px){@content;}
+}

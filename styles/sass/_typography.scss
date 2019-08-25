@@ -18,7 +18,7 @@ h1{
     font-weight: 700;
     text-transform: uppercase;
     font-size: 3rem;
-    color: ($footergrey);
+    color: ($lightgrey);
     letter-spacing: 0.2rem;
     @include for-landscape-phone{
         .icon1{
@@ -39,8 +39,8 @@ p.wtf{
 
 button{
     font-family: ($baseFont);
-    background: ($raspberry);
-    color: ($footergrey);
+    background: ($purple);
+    color: ($lightgrey);
 }
 
 
@@ -48,5 +48,5 @@ button{
 
 footer p{
     font-family: ($baseFont);
-    color: ($footergrey);
+    color: black;
 }
