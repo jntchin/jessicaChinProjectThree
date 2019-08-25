@@ -1,0 +1,4 @@
+
+@mixin for-landscape-phone{
+    @media(max-width: 610px){@content;}
+}

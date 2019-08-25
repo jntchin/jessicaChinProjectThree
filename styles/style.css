@@ -196,6 +196,12 @@ h1 {
   letter-spacing: 0.2rem;
 }
 
+@media (max-width: 610px) {
+  h1 .icon1 {
+    display: none;
+  }
+}
+
 h2 {
   font-family: "Montserrat", sans-serif;
 }

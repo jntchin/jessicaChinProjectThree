@@ -1,6 +1,5 @@
 @import 'variables';
-    
-
+@import 'mixins';
 
 //GENERAL FONT STYLES
 
@@ -21,6 +20,11 @@ h1{
     font-size: 3rem;
     color: ($footergrey);
     letter-spacing: 0.2rem;
+    @include for-landscape-phone{
+        .icon1{
+            display: none;
+        }
+    }
 }
 
 h2{
