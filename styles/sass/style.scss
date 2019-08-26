@@ -14,6 +14,11 @@ h1{
     @include for-small-phones{
         padding-top: 5%;
     }
+    @include for-landscape-phones{
+        .icon1{
+            display: none;
+        }
+    }
 }
 
 header{
@@ -106,12 +111,12 @@ form{
         border-radius: 0.5rem;
         background: ($purple);
     }
-       select{
-            background: ($lightgrey);
-            box-shadow: 0 1px 0 1p transparent;
-            border-radius: 0.5rem;
-            box-sizing: border-box;
-        }
+    select{
+        background: ($lightgrey);
+        box-shadow: 0 1px 0 1p transparent;
+        border-radius: 0.5rem;            
+        box-sizing: border-box;
+    }
 }
 
 //FOOTER STYLES
@@ -119,13 +124,9 @@ form{
 footer{
     text-align: center;
     display: block;
+    p{
+        display: block;
+        background-color: ($turquoise);
+        margin-bottom: 0;
+    }
 }
-
-footer p{
-    display: block;
-    background-color: ($turquoise);
-    margin-bottom: 0;
-}
-
-
-

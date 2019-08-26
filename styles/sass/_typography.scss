@@ -20,19 +20,17 @@ h1{
     font-size: 3rem;
     color: ($lightgrey);
     letter-spacing: 0.2rem;
-    @include for-landscape-phones{
-        .icon1{
-            display: none;
-        }
-    }
 }
 
-h2{
-    font-family: ($baseFont);
+//BODY FONT STYLES
+
+main p{
+    font-size: 1.5rem;
 }
 
 p.wtf{
     font-weight: 100;
+    font-size: 1rem;
 }
 
 //BUTTON STYLES
@@ -40,6 +38,7 @@ p.wtf{
 button{
     font-family: ($baseFont);
     color: ($lightgrey);
+    font-size: 1rem;
 }
 
 
@@ -48,4 +47,5 @@ button{
 footer p{
     font-family: ($baseFont);
     color: black;
+    font-size: 0.8rem;
 }
