@@ -248,6 +248,12 @@ footer p {
   animation: rotating 2s linear infinite;
 }
 
+@media (max-width: 610px) {
+  body {
+    height: 100vh;
+  }
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -284,8 +290,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 2%;
@@ -305,18 +309,17 @@ body {
   color: black;
 }
 
-p.wtf {
-  text-align: center;
+p.clickPrompt {
+  margin-top: 10%;
 }
 
-@media (max-width: 320px) {
-  .clickPromptWrapper {
-    margin-bottom: 10%;
-  }
+p.wtf {
+  text-align: center;
+  margin-top: 0;
 }
 
 .mainText {
-  margin: 4% 0;
+  margin-top: 10%;
 }
 
 .d20 {
@@ -326,13 +329,12 @@ p.wtf {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 5% 0;
+  margin: 10% 0;
 }
 
 @media (max-width: 320px) {
   .d20 .d20 {
     text-align: center;
-    margin-bottom: 20%;
   }
 }
 

@@ -20,7 +20,7 @@ h1{
     font-size: 3rem;
     color: ($lightgrey);
     letter-spacing: 0.2rem;
-    @include for-landscape-phone{
+    @include for-landscape-phones{
         .icon1{
             display: none;
         }

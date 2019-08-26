@@ -55,17 +55,17 @@ main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    // justify-content: space-around;
-    // align-content: center;
+    // justify-content: space-between;
+    align-content: center;
     padding: 2%;
     // border: 2px solid orange;
 }
 
-.mainText{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
+// .mainText{
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-direction: column;
+// }
 
 .d20,
 .modifier,
@@ -116,10 +116,6 @@ p.wtf{
 
 .d20Wrapper{
     position: relative;
-    // @include for-small-phones{
-    //     margin-bottom: 20%;
-    // }
-    // border: 2px solid orange;
 }
 
 .d20:before {
