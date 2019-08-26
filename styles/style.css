@@ -309,14 +309,14 @@ p.wtf {
   text-align: center;
 }
 
-.mainText {
-  margin: 4% 0;
+@media (max-width: 320px) {
+  .clickPromptWrapper {
+    margin-bottom: 10%;
+  }
 }
 
-@media (max-width: 320px) {
-  .mainText {
-    margin-top: 8%;
-  }
+.mainText {
+  margin: 4% 0;
 }
 
 .d20 {
@@ -332,6 +332,7 @@ p.wtf {
 @media (max-width: 320px) {
   .d20 .d20 {
     text-align: center;
+    margin-bottom: 20%;
   }
 }
 

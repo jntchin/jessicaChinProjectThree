@@ -12,7 +12,7 @@ dieRollApp.rollDie = function(){
     $('.d20').on('click touch', function(){   
     //initially says "Click here to roll the die"
     if (dieRollApp.dieMoving === false){
-        $('p.clickPrompt').empty().html(`Click the d20 to get your roll`);
+        $('p.clickPrompt').empty().html(`Click the d20 to stop it`);
         $('.d20').css('animation-play-state', 'running');
     }
     else {

@@ -1,5 +1,5 @@
 
-@mixin for-landscape-phone{
+@mixin for-landscape-phones{
     @media(max-width: 610px){@content;}
 }
 
