@@ -10,12 +10,12 @@ dieRollApp.initialState = function(){
 
 dieRollApp.rollDie = function(){
     $('.20SidedDie').on('click touch', function(){   
-    if (dieRollApp.dieMoving === true){
+    if (dieRollApp.dieMoving === false){
         $('p.clickPrompt').empty().html(`Click again to stop it`);
         $('.20SidedDie').css('animation-play-state', 'running');
     }
     else {
-        $('p.clickPrompt').empty().html(`Click the d20 to roll it`);
+        $('p.clickPrompt').empty().html(`Click the d20 to roll it again`);
         dieRollApp.dieRoll = Math.floor(Math.random()*(0-20))+21;
         $('.emptyValue').empty().html(dieRollApp.dieRoll);
         $('.20SidedDie').css('animation-play-state', 'paused');
