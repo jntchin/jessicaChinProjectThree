@@ -212,7 +212,6 @@ p.wtf {
 
 button {
   font-family: "Montserrat", sans-serif;
-  background: #7E395C;
   color: #F7ECDF;
 }
 
@@ -224,43 +223,28 @@ footer p {
 @-webkit-keyframes rotating {
   from {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes rotating {
   from {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 .rotating {
   -webkit-animation: rotating 2s linear infinite;
-  animation: rotating 2s linear infinite;
-}
-
-@media (max-width: 610px) {
-  body {
-    height: 100vh;
-  }
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a :hover {
-  background: #76E2DC;
+          animation: rotating 2s linear infinite;
 }
 
 h1 {
@@ -304,6 +288,10 @@ main {
       align-content: center;
 }
 
+main .mainText {
+  text-align: center;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -311,8 +299,22 @@ body {
   color: black;
 }
 
+@media (max-width: 610px) {
+  body {
+    height: 100vh;
+  }
+}
+
 .clickPromptWrapper {
   width: 100%;
+}
+
+.clickPromptWrapper p {
+  font-weight: 700;
+}
+
+p.finalRoll {
+  font-weight: 700;
 }
 
 p.wtf {
@@ -320,8 +322,13 @@ p.wtf {
   margin-top: 0;
 }
 
-.mainText {
-  text-align: center;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a :hover {
+  background: #76E2DC;
 }
 
 .d20Wrapper {
@@ -329,14 +336,36 @@ p.wtf {
   margin: 0 auto;
 }
 
+.d20Wrapper img {
+  max-width: 100%;
+}
+
 @media (max-width: 320px) {
-  .d20Wrapper {
+  .rotating {
     max-width: 90%;
   }
 }
 
-.d20Wrapper img {
-  max-width: 100%;
+.rotating :active {
+  background: transparent;
+}
+
+form {
+  margin-top: 10%;
+}
+
+form button {
+  border-radius: 0.5rem;
+  background: #7E395C;
+}
+
+form select {
+  background: #F7ECDF;
+  -webkit-box-shadow: 0 1px 0 1p transparent;
+          box-shadow: 0 1px 0 1p transparent;
+  border-radius: 0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 footer {

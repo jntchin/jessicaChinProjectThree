@@ -3,31 +3,9 @@
 @import 'animation';
 @import 'mixins';
 
-// styles for a 20-sided polygon
-// styles for the modifier drop-down
-
-// stretch goals: additional polygons
-
-
-//GENERAL STYLES
-
-body{
-    @include for-landscape-phones{
-        height: 100vh;
-    }
-}
-
-
-a{
-  text-decoration: none;
-  color: black;
-    :hover{
-      background:($turquoise);
-    }
-}
-
 
 //HEADER STYLES
+
 h1{
     text-align: center;
     background: ($purple);
@@ -42,14 +20,7 @@ header{
     margin-top: 0;
 }
 
-// header{
-//     padding: 0;
-//     margin: 0;
-//     // display: block;
-// }
-
-
-//BODY STYLES
+//GENERAL BODY STYLES
 
 .d20,
 .modifier,
@@ -64,6 +35,9 @@ main{
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
+        .mainText{
+            text-align: center;
+        }
 }
 
 body{
@@ -71,25 +45,36 @@ body{
     margin: 0;
     background: ($mustard);
     color: black;
+    @include for-landscape-phones{
+        height: 100vh;
+    }
     
 }
 
 .clickPromptWrapper{
     width: 100%;
+        p{
+            font-weight: 700;
+        }
 }
 
-// p.clickPrompt{
-//     margin-top: 10%;
-// }
+p.finalRoll{
+    font-weight: 700;
+}
 
 p.wtf{
     text-align: center;
     margin-top: 0;
 }
 
-.mainText{
-    text-align: center;
+a{
+    text-decoration: none;
+    color: black;
+      :hover{
+        background:($turquoise);
+      }
 }
+
 
 
 //DIE STYLES
@@ -98,50 +83,36 @@ p.wtf{
 .d20Wrapper{
     max-width: 80%;
     margin: 0 auto;
-    @include for-small-phones{
-        max-width: 90%;
-    }
         img{
             max-width: 100%;
         }
 }
 
+.rotating{
+    @include for-small-phones{
+        max-width: 90%;
+    }
+        :active{
+            background: transparent;
+        }
+}
 
-// div.rotating{
-//     // width: 10rem;
-//     // height: 5.5rem;
-//     display: flex;
-//     margin: 10% 0;
-// }
+//FORM STYLES
 
-// .d20Wrapper{
-//     position: relative;
-// }
-
-// .d20:before {
-//     content: "";
-//     position: absolute;
-//     top: -2.5rem;
-//     left: 0;
-//     width: 0;
-//     height: 0;
-//     border-left: 5rem solid transparent;
-//     border-right: 5rem solid transparent;
-//     // border-bottom: 2.5rem solid ($lightgrey);
-// }
-
-// .d20:after {
-//     content: "";
-//     position: absolute;
-//     bottom: -2.5rem;
-//     left: 0;
-//     width: 0;
-//     height: 0;
-//     border-left: 5rem solid transparent;
-//     border-right: 5rem solid transparent;
-//     // border-top: 2.5rem solid ($lightgrey);
-// }
-
+form{
+    margin-top: 10%;
+    button{
+        border-radius: 0.5rem;
+        background: ($purple);
+    }
+       select{
+            background: ($lightgrey);
+            // color: ($lightgrey);
+            box-shadow: 0 1px 0 1p transparent;
+            border-radius: 0.5rem;
+            box-sizing: border-box;
+        }
+}
 
 //FOOTER STYLES
 
