@@ -10,9 +10,13 @@
 
 
 //GENERAL STYLES
-// *{
-//     border: 2px solid orange;
-// }
+
+body{
+    @include for-landscape-phones{
+        height: 100vh;
+    }
+}
+
 
 a{
   text-decoration: none;
@@ -51,10 +55,16 @@ main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
+    // justify-content: space-around;
+    // align-content: center;
     padding: 2%;
     // border: 2px solid orange;
+}
+
+.mainText{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .d20,
@@ -69,22 +79,20 @@ body{
     margin: 0;
     background: ($mustard);
     color: black;
+    
+}
+
+p.clickPrompt{
+    margin-top: 10%;
 }
 
 p.wtf{
     text-align: center;
-}
-
-.clickPromptWrapper{
-    @include for-landscape-phones{
-        .clickPrompt{
-            margin-bottom: 10%;
-        }
-    }
+    margin-top: 0;
 }
 
 .mainText{
-    margin: 4% 0;
+    margin-top: 10%;
 }
 
 
@@ -97,11 +105,11 @@ p.wtf{
     background: ($lightgrey);
     display: flex;
     // border: 2px solid green;
-    margin: 5% 0;
+    margin: 10% 0;
     @include for-small-phones{
         .d20{
             text-align: center;
-            margin-bottom: 20%;
+            // margin-bottom: 20%;
         }
     }
 }
