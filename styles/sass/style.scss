@@ -65,16 +65,17 @@ p.finalRoll{
 p.wtf{
     text-align: center;
     margin-top: 0;
+    font-style: oblique;
 }
 
 a{
     text-decoration: none;
     color: black;
-      :hover{
-        background:($turquoise);
-      }
 }
 
+a:hover{
+    background:($turquoise);
+}
 
 
 //DIE STYLES
@@ -107,7 +108,6 @@ form{
     }
        select{
             background: ($lightgrey);
-            // color: ($lightgrey);
             box-shadow: 0 1px 0 1p transparent;
             border-radius: 0.5rem;
             box-sizing: border-box;

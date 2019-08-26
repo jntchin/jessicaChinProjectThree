@@ -10,7 +10,7 @@ dieRollApp.initialState = function(){
 
 dieRollApp.rollDie = function(){
     $('.20SidedDie').on('click touch', function(){   
-    if (dieRollApp.dieMoving === false){
+    if (dieRollApp.dieMoving === true){
         $('p.clickPrompt').empty().html(`Click again to stop it`);
         $('.20SidedDie').css('animation-play-state', 'running');
     }
