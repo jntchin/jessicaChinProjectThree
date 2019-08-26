@@ -5,21 +5,20 @@ dieRollApp.dieMoving = false;
 
 dieRollApp.initialState = function(){ 
     $('p.clickPrompt').append(`Click the d20 to roll it`);
-    $('.d20').css('animation-play-state', 'paused');
+    $('.20SidedDie').css('animation-play-state', 'paused');
 };
 
 dieRollApp.rollDie = function(){
-    $('.d20').on('click touch', function(){   
-    //initially says "Click here to roll the die"
+    $('.20SidedDie').on('click touch', function(){   
     if (dieRollApp.dieMoving === false){
         $('p.clickPrompt').empty().html(`Click the d20 to stop it`);
-        $('.d20').css('animation-play-state', 'running');
+        $('.20SidedDie').css('animation-play-state', 'running');
     }
     else {
         $('p.clickPrompt').empty().html(`Click the d20 to roll it`);
         dieRollApp.dieRoll = Math.floor(Math.random()*(0-20))+21;
         $('.emptyValue').empty().html(dieRollApp.dieRoll);
-        $('.d20').css('animation-play-state', 'paused');
+        $('.20SidedDie').css('animation-play-state', 'paused');
     };
 
     // console.log(`inside the die statement`)};
@@ -41,8 +40,6 @@ dieRollApp.addModifier = function(){
         $('.emptyValue').empty().html(dieRollApp.finalDieRoll);
     });
 };
-
-
 
 $(document).ready(function(){
 
